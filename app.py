@@ -28,7 +28,7 @@ st.title('Movie Recommender System')
 
 movie_name = st.selectbox('Choose your movie',titles)
 
-if st.button('Recommend'):
+if st.button('Recommend similar movies'):
 	recs,posters = top_5_movies(movie_name)
 	col1, col2, col3, col4, col5 = st.columns(5)
 	with col1:
